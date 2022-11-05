@@ -2,6 +2,7 @@ $headerFooterBGColor: #1F2937;
 $headerLinkColor: #E5E7EB;
 $heroTextColor: #F9FAF8;
 $buttonColor: #3b82f6;
+$usefillLinksTextColor: #1F2937;
 $globalFont: monospace;
 
 * {
@@ -95,7 +96,41 @@ body {
     }
 
     .information {
-        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 70px;
+
+        h2 {
+            font-size: 36px;
+            color: $usefillLinksTextColor;
+        }
+
+        .info_container {
+            display: flex;
+            justify-content: center;
+            gap: 150px;
+
+            
+            .info_element {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .info_block {
+                    img {
+                        width: 200px;
+                        height: 200px;
+                        border-style: solid;
+                        border-color: $buttonColor;
+                        border-radius: 20px;
+                    }
+                }
+                .info_text {
+                    font-size: 15px;
+                    text-align: center;
+                }
+            }
+        }
     }
 
 }

@@ -1,5 +1,6 @@
 $headerFooterBGColor: #1F2937;
 $headerLinkColor: #E5E7EB;
+$quoteBGColor: #E5E7EB;
 $heroTextColor: #F9FAF8;
 $buttonColor: #3b82f6;
 $usefillLinksTextColor: #1F2937;
@@ -20,7 +21,6 @@ body {
     min-height: 100yl;
     display: flex;
     flex-direction: column;
-
     .header {
         box-sizing: border-box;
         background-color: $headerFooterBGColor;
@@ -133,4 +133,25 @@ body {
         }
     }
 
+    .quote {
+        background-color: $quoteBGColor;
+        display: flex;
+        justify-content: center;
+        padding: 100px 0 100px 0;
+        .quote_container {
+            width: 900px;
+            display: flex;
+            flex-direction: column;
+            .quote_text {
+                    font-size: 36px;
+                    font-style: italic;
+                }
+            
+                .quote_signature {
+                    font-weight: bold;
+                    font-size: 22px;
+                    align-self: flex-end;
+                }
+        }
+    }
 }
